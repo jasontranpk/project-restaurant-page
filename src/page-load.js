@@ -1,7 +1,9 @@
 import logoSrc from './logo_transparent.png';
+import menu from './pages/menu';
 
 const pageLoad = () =>{
     const content = document.getElementById('content');
+    content.innerHTML = '';
     const header = document.createElement('div');
     header.className = 'header';
     
@@ -24,11 +26,11 @@ const pageLoad = () =>{
     navBar.className = 'nav-bar';
 
     const homepage = document.createElement('li');
-    homepage.textContent = 'Homepage';
+    homepage.innerHTML = '<a href="" id="homepageNav">Homepage</a>';
     const menu = document.createElement('li');
-    menu.textContent = 'Menu';
+    menu.innerHTML = '<a href="" id="menuNav">Menu</a>';
     const contact = document.createElement('li');
-    contact.textContent = 'Contact';
+    contact.innerHTML = '<a href="" id="contactNav">Contact Us</a>';
 
     navBar.appendChild(homepage);
     navBar.appendChild(menu);
@@ -40,6 +42,7 @@ const pageLoad = () =>{
     header.appendChild(nav);
 
     const main = document.createElement('div');
+    main.id ='main';
     main.className = 'main';
 
     const paraBox1 =  document.createElement('div');
@@ -49,17 +52,19 @@ const pageLoad = () =>{
 
     const paraBox2 =  document.createElement('div');
     paraBox2.classList = 'textBox lowerBox';
-    paraBox2.innerHTML = '<h3>OPENING TIME </h3><p>Mon-Thurs:8am-8pm</p> <p>Fri-Sun:8am-11pm</p>';
+    paraBox2.innerHTML = '<h3>OPENING TIME </h3><p>Mon-Thurs: 8am-8pm</p> <p>Fri-Sun: 8am-11pm</p>';
 
     main.appendChild(paraBox1);
     main.appendChild(paraBox2);
 
     const footer = document.createElement('div');
     footer.className = 'footer';
-    footer.textContent = 'Copyrighted by Son Tran'
+    footer.innerHTML = 'Copyrighted&copy; by Son Tran'
     
     content.appendChild(header);
     content.appendChild(main);
     content.appendChild(footer);
+
+
 };
 export default pageLoad;

@@ -29,7 +29,7 @@ body {
     gap: 0;
     padding: 15px;
     align-items: center;
-    background-color: rgb(212, 212, 216, 0.4);
+    background-color: rgb(212, 212, 216, 0.2);
 }
 
 .nav ul {
@@ -54,18 +54,19 @@ body {
 }
 
 .textBox{
-    width: 300px;
-    background-color: rgb(212, 212, 216, 0.4);
-    padding: 15px;
 
+    background-color: rgb(212, 212, 216, 0.8);
+    padding: 15px;
     border-radius: 5px;
 }
 .upperBox{
+    width: 300px;
     margin-top: 150px ;
     margin-left: 30%;
     padding-bottom: 30px;
 }
 .lowerBox{
+    width: 350px;
     margin-top: 150px ;
     margin-left: 60%;
     display: flex;
@@ -83,4 +84,27 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+/* MENU PAGE */
+.dish{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+.dish img{
+    width: 100px;
+}
+/* CONTACT PAGE */
+.contactBox{
+    width: 500px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
 }
